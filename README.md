@@ -22,7 +22,7 @@ The paths are configured in `app/globals.css`.
 
 ## Contact form
 
-The enquiry form opens the visitor's email app with a draft addressed to `yathin1779@gmail.com`. It does not send directly from the website.
+The enquiry form currently shows a confirmation toast after valid fields are submitted. It does not send data to a backend. Visitors can use the direct email link to contact `yathin1779@gmail.com`.
 
 ## Build
 
