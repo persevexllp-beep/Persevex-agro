@@ -21,12 +21,12 @@ export function SiteFooter() {
             <Image
               className="brand-logo"
               src="/logo-persevex-agro.png"
-              alt="Persevex Agro logo"
+              alt="Persevex logo"
               width={299}
               height={400}
             />
             <span>
-              <strong>Persevex Agro</strong>
+              <strong>Persevex</strong>
               <small>WHERE SUSTAINABLE MEETS GROWTH</small>
             </span>
           </Link>
@@ -54,7 +54,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="wrap footer-bottom">
-        © {new Date().getFullYear()} Persevex Agro. All rights reserved.
+        © {new Date().getFullYear()} Persevex. All rights reserved.
       </div>
     </footer>
   );

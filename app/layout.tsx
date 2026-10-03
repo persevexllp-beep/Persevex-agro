@@ -5,8 +5,8 @@ import { ScrollReveal } from "./components/scroll-reveal";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "Persevex Agro | Cocopeat & Coir Fiber", template: "%s | Persevex Agro" },
-  description: "Persevex Agro turns coconut husk into cocopeat growing medium and useful coir fiber. Contact us for product and bulk enquiries.",
+  title: { default: "Persevex | Cocopeat & Coir Fiber", template: "%s | Persevex" },
+  description: "Persevex turns coconut husk into cocopeat growing medium and useful coir fiber. Contact us for product and bulk enquiries.",
   icons: { icon: "/logo-persevex-agro.png" },
 };
 
