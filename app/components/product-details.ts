@@ -8,7 +8,7 @@ export const productDetails: Record<string, ProductDetails> = {
   cocopeat: {
     overview: "Cocopeat is the fine pith separated from coconut husks. Its light structure holds moisture while allowing air around roots, making it a useful ingredient in growing mixes. The preparation and specification should match your crop and growing system.",
     uses: ["Potting mixes for home gardens and balcony containers", "Nursery trays and seed-starting mixes", "Growing bags and hydroponic systems using appropriately prepared cocopeat"],
-    ordering: ["Cart quantities are counted in 25 kg bags.", "Specify whether you need washed or buffered material and any required growing-medium specifications.", "Include the number of bags and delivery location so packing and transport can be discussed."],
+    ordering: ["Cart quantities are counted in kilograms.", "Specify whether you need washed or buffered material and any required growing-medium specifications.", "Include the quantity in kilograms and delivery location so packing and transport can be discussed."],
   },
   "coir-fiber": {
     overview: "Coir fiber is the longer natural strand extracted from coconut husks. It is used as a raw material in a range of manufacturing applications. Fiber length, cleanliness and packing requirements can vary by intended use.",
@@ -21,9 +21,14 @@ export const productDetails: Record<string, ProductDetails> = {
     ordering: ["Cart quantities are counted in kilograms.", "Specify the meat type, preferred cut, and whether you require bone-in or boneless portions.", "Include your delivery location and preferred date to check availability."],
   },
   "mixed-meat": {
-    overview: "Plan a mixed meat order around your menu. Share the types of meat and portion requirements you want to combine, and ask for a quote based on that selection. The pictured assortment illustrates the category; the final contents are agreed during your enquiry.",
-    uses: ["Menus that call for several types of meat", "Catering orders with different portion requirements", "Custom selections for household or business kitchens"],
-    ordering: ["Cart quantities represent the total kilograms requested.", "Use checkout notes to list each meat type and the quantity required for it.", "Ask the team to confirm the selection, preparation and delivery arrangements."],
+    overview: "Order chicken to suit your meals or menu. Share your preferred cuts and preparation requirements so availability can be confirmed. The image illustrates an assortment; your order is for chicken.",
+    uses: ["Everyday chicken meals", "Curries, grilling and roasting", "Restaurant and catering menus"],
+    ordering: ["Cart quantities are counted in kilograms.", "Specify your preferred chicken cuts and whether you need bone-in or boneless portions.", "Include your delivery location and preferred date to check availability."],
+  },
+  mutton: {
+    overview: "Choose mutton cuts for your household, restaurant or catering requirements. Share the cuts and preparation you prefer when placing your order.",
+    uses: ["Mutton curries and stews", "Biryanis and slow-cooked dishes", "Restaurant and catering menus"],
+    ordering: ["Cart quantities are counted in kilograms.", "Specify your preferred cuts and whether you need bone-in or boneless portions.", "Include your delivery location and preferred date to check availability."],
   },
   "seasonal-vegetables": {
     overview: "Build your vegetable order around the produce currently available. A seasonal selection can cover a range of everyday kitchen needs, with the exact varieties and quantities confirmed before the order is finalised.",

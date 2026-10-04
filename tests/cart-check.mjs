@@ -97,12 +97,12 @@ console.log('Cart checks passed: persistence, quantities, removal, sync, checkou
 
 const { calculatePricing, restorePricing, formatPrice } = load('app/components/pricing.ts');
 const priced = calculatePricing([{ productId: 'meat-cuts', quantity: 2 }, { productId: 'mixed-meat', quantity: 3 }, { productId: 'cocopeat', quantity: 1 }, { productId: 'mixed-vegetables', quantity: 2 }]);
-assert.equal(priced.subtotal, 3130);
-assert.equal(priced.total, 3130);
+assert.equal(priced.subtotal, 3280);
+assert.equal(priced.total, 3280);
 assert.equal(priced.delivery, 0);
 assert.equal(priced.lines[0].lineTotal, 1300);
 assert.equal(calculatePricing([]).total, 0);
-assert.equal(calculatePricing([{ productId: 'mixed-meat', quantity: 999 }]).total, 449550);
+assert.equal(calculatePricing([{ productId: 'mixed-meat', quantity: 999 }]).total, 499500);
 assert.match(formatPrice(3130), /3,130/);
 assert.throws(() => calculatePricing([{ productId: 'unknown', quantity: 1 }]));
 assert.throws(() => calculatePricing([{ productId: 'meat-cuts', quantity: -1 }]));

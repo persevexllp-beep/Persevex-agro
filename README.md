@@ -4,7 +4,7 @@ Next.js site inspired by the layout and sections of the supplied reference websi
 
 ## Pages
 
-The app bar links to dedicated routes: `/about`, `/process`, `/products`, `/quality`, `/guides`, `/faq`, and `/contact`. Shared navigation and footer live in `app/layout.tsx`.
+The app bar links to dedicated routes: `/about`, `/process`, `/products`, `/faq`, and `/contact`. Shared navigation and footer live in `app/layout.tsx`.
 
 ## Images
 

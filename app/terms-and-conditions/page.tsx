@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { email } from "../components/site-data";
+import { phone } from "../components/site-data";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions",
@@ -15,7 +15,7 @@ export default function TermsAndConditions() {
 
     <section><h2>1. Website information</h2><p>This website provides general information about Persevex, cocopeat, coir fiber, and related uses. Content may be updated, corrected, or removed. Product images and descriptions are illustrative; actual specifications, availability, packing, pricing, and delivery terms must be confirmed in writing for each order.</p></section>
 
-    <section><h2>2. Enquiries and orders</h2><p>Information shown on this website is not an offer to sell. An enquiry does not create an order or a supply commitment. A transaction is agreed only when Persevex and the customer confirm its terms in writing.</p><p>The on-screen enquiry experience currently displays an acknowledgement but does not transmit the entered details to us. To reach us, email <a href={`mailto:${email}`}>{email}</a>.</p></section>
+    <section><h2>2. Enquiries and orders</h2><p>Information shown on this website is not an offer to sell. An enquiry does not create an order or a supply commitment. A transaction is agreed only when Persevex and the customer confirm its terms in writing.</p><p>The enquiry form prepares a text message for you to review and send from your messaging app. To reach us, call <a href={`tel:${phone}`}>{phone}</a>.</p></section>
 
     <section><h2>3. Using the website</h2><p>You may use the website for lawful, personal, or business information purposes. Please do not interfere with its operation, attempt unauthorized access, introduce harmful code, or use its content in a way that infringes another person’s rights.</p></section>
 
@@ -27,6 +27,6 @@ export default function TermsAndConditions() {
 
     <section><h2>7. Changes and applicable law</h2><p>We may revise these terms as the website changes. The date above shows the latest version. These terms are governed by the laws of India, subject to any mandatory rights that apply to you. Any dispute relating to website use is subject to the courts with jurisdiction in Bengaluru, Karnataka, where permitted by law.</p></section>
 
-    <section><h2>8. Contact</h2><p>For questions about these terms, write to <a href={`mailto:${email}`}>{email}</a>.</p></section>
+    <section><h2>8. Contact</h2><p>For questions about these terms, call <a href={`tel:${phone}`}>{phone}</a>.</p></section>
   </div></section>;
 }

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { email } from "./site-data";
+import { phone } from "./site-data";
 
 const footerAddress = [
   ["Building No./Flat No.", "No 9"],
@@ -22,7 +22,7 @@ export function SiteFooter() {
               className="brand-logo"
               src="/logo-persevex-agro.png"
               alt="Persevex logo"
-              width={299}
+              width={400}
               height={400}
             />
             <span>
@@ -30,20 +30,18 @@ export function SiteFooter() {
               <small>WHERE SUSTAINABLE MEETS GROWTH</small>
             </span>
           </Link>
-          <p>Turning coconut husk into useful coir fiber and cocopeat.</p>
+          <p>Meat, fruits, vegetables and growing essentials for your home or business.</p>
         </div>
         <div>
           <h4>EXPLORE</h4>
           <Link href="/about">About</Link>
           <Link href="/process">Our Process</Link>
           <Link href="/products">Products</Link>
-          <Link href="/quality">Quality</Link>
-          <Link href="/guides">Guides</Link>
           <Link href="/faq">FAQ</Link>
         </div>
         <div>
           <h4>CONTACT</h4>
-          <a href={`mailto:${email}`}>{email}</a>
+          <a href={`tel:${phone}`}>{phone}</a>
           <address className="footer-address">
             {footerAddress.map(([label, value]) => (
               <span key={label}>
