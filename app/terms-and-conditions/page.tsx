@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { phone } from "../components/site-data";
 
 export const metadata: Metadata = {
@@ -10,10 +11,10 @@ export default function TermsAndConditions() {
   return <section className="section legal-page inner-page"><div className="wrap legal-wrap">
     <span className="section-kicker">PERSEVEX</span>
     <h1>Terms and Conditions</h1>
-    <p className="legal-updated">Last updated: 29 September 2026</p>
+    <p className="legal-updated">Last updated: 4 October 2026</p>
     <p>These terms describe how you may use the Persevex website. Please read them alongside any separate written quotation or agreement you receive from us.</p>
 
-    <section><h2>1. Website information</h2><p>This website provides general information about Persevex, cocopeat, coir fiber, and related uses. Content may be updated, corrected, or removed. Product images and descriptions are illustrative; actual specifications, availability, packing, pricing, and delivery terms must be confirmed in writing for each order.</p></section>
+    <section><h2>1. Website information</h2><p>This website provides general information about Persevex meat, fruits, vegetables, cocopeat and coir fiber. Content may be updated, corrected, or removed. Product images and descriptions are illustrative; actual specifications, availability, packing, pricing, and delivery terms must be confirmed in writing for each order.</p></section>
 
     <section><h2>2. Enquiries and orders</h2><p>Information shown on this website is not an offer to sell. An enquiry does not create an order or a supply commitment. A transaction is agreed only when Persevex and the customer confirm its terms in writing.</p><p>The enquiry form prepares a text message for you to review and send from your messaging app. To reach us, call <a href={`tel:${phone}`}>{phone}</a>.</p></section>
 
@@ -27,6 +28,8 @@ export default function TermsAndConditions() {
 
     <section><h2>7. Changes and applicable law</h2><p>We may revise these terms as the website changes. The date above shows the latest version. These terms are governed by the laws of India, subject to any mandatory rights that apply to you. Any dispute relating to website use is subject to the courts with jurisdiction in Bengaluru, Karnataka, where permitted by law.</p></section>
 
-    <section><h2>8. Contact</h2><p>For questions about these terms, call <a href={`tel:${phone}`}>{phone}</a>.</p></section>
+    <section><h2>8. Cancellations and refunds</h2><p>See our <Link href="/cancellation-and-refund-policy">Cancellation and Refund Policy</Link> for order changes, perishable goods, delivery issues and refunds. Any order-specific terms must be disclosed before confirmation and cannot override mandatory consumer rights.</p></section>
+
+    <section><h2>9. Contact</h2><p>For questions about these terms, call <a href={`tel:${phone}`}>{phone}</a>.</p></section>
   </div></section>;
 }

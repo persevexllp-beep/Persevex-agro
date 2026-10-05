@@ -38,6 +38,8 @@ export function SiteFooter() {
           <Link href="/process">Our Process</Link>
           <Link href="/products">Products</Link>
           <Link href="/faq">FAQ</Link>
+          <Link href="/terms-and-conditions">Terms and Conditions</Link>
+          <Link href="/cancellation-and-refund-policy">Cancellation & Refund Policy</Link>
         </div>
         <div>
           <h4>CONTACT</h4>

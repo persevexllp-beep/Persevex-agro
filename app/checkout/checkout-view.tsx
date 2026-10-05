@@ -69,6 +69,7 @@ export function CheckoutView() {
         <label>Delivery address<textarea name="address" autoComplete="street-address" rows={3} required maxLength={1000} placeholder="Street address, city, postcode" /></label>
         <label>Order notes (optional)<textarea name="notes" rows={3} maxLength={2000} placeholder="Preferred cuts, varieties, delivery timing or other requirements" /></label>
         <p className="checkout-note">Your cart and most recent order enquiry are saved on this device. Use the text message draft after checkout to share your order with us.</p>
+        <p className="checkout-note">Review our <Link className="text-link" href="/cancellation-and-refund-policy">Cancellation and Refund Policy</Link> before confirming an order with our team.</p>
         <button className="button primary" type="submit">Save order enquiry →</button>
         {cart.error && <p className="cart-error" role="alert">{cart.error}</p>}
       </form><aside className="cart-summary"><h2>Your order</h2><ul className="checkout-items">{cart.items.map(item => {
