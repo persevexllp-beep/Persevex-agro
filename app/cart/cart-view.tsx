@@ -12,7 +12,7 @@ export function CartView() {
   const cart = useCart();
   const pricing = calculatePricing(cart.items);
   return <section className="section inner-page"><div className="wrap">
-    <div className="section-heading"><span className="section-kicker">YOUR CART</span><h1>Your selected products.</h1><p>Choose quantities, then checkout to prepare your order enquiry. Your order total updates as you change quantities.</p></div>
+    <div className="section-heading"><span className="section-kicker">YOUR CART</span><h1>Your selected products.</h1><p>Choose quantities, then checkout to save your delivery details and access product payment links. Your order total updates as you change quantities.</p></div>
     {!cart.ready ? <p role="status">Loading your cart…</p> : !cart.items.length ? <div className="cart-empty"><h2>Your cart is empty.</h2><p>Explore our products to start your order.</p><Link className="button primary" href="/products">Browse products</Link></div> : <div className="cart-layout">
       <div className="cart-items">{cart.items.map(item => {
         const product = products.find(product => product.id === item.productId)!;

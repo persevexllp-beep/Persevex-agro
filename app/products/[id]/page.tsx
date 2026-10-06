@@ -34,7 +34,7 @@ export default async function ProductPage({ params }: Props) {
       <div className="product-detail-copy"><span className="section-kicker">{product.category}</span><h1>{product.name}</h1><p className="lead">{product.description}</p>
         <div className="product-price"><span>PRICE</span><strong>{formatPrice(product.price)}</strong><small>per {product.unit}</small></div>
         <p className="product-unit">Order unit: <strong>{product.unit}</strong>. Each click adds one {product.unit} to your cart.</p>
-        <div className="product-detail-actions"><AddToCart productId={product.id} /><Link className="button outline" href="/cart">View cart →</Link></div>
+        <div className="product-detail-actions"><AddToCart productId={product.id} /><a className="button outline" href={product.paymentUrl} target="_blank" rel="noopener noreferrer" aria-label={`Buy ${product.name} on Razorpay (opens in a new tab)`}>Buy now →</a><Link className="button outline" href="/cart">View cart →</Link></div>
         <Link className="text-link" href="/contact">{product.enquiry}</Link>
         <p className="product-detail-note">Prices include taxes and free delivery. Use checkout notes to share your selection and delivery requirements.</p>
       </div>

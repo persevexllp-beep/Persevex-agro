@@ -51,3 +51,5 @@
 .about-meat-image{position:relative;min-height:480px;border-radius:12px;overflow:hidden;background:var(--sage)}
 .about-story h2{font-size:clamp(1.8rem,3vw,2.6rem)}
 @media(max-width:720px){.about-meat-image{min-height:320px}}
+
+.product-copy .product-actions>a.button{padding:0 18px}.checkout-items .text-link{display:inline-block;margin-top:10px}

@@ -15,7 +15,7 @@ export default function Products() {
       <Link className="product-image-link" href={`/products/${product.id}`} aria-label={`View ${product.name} details`}>{product.image ? <div className="image-panel"><Image src={product.image} alt={product.imageLabel} fill sizes="(max-width: 600px) calc(100vw - 36px), (max-width: 720px) calc((100vw - 56px) / 2), (max-width: 1000px) calc((100vw - 76px) / 2), (max-width: 1236px) calc((100vw - 96px) / 3), 380px" style={{ objectFit: "cover" }} /></div> : <ImagePanel kind={product.kind!} label={product.imageLabel} />}</Link>
       <div className="product-copy"><span>{product.category}</span><h3><Link href={`/products/${product.id}`}>{product.name}</Link></h3><p>{product.description}</p>
         <div className="product-price"><span>PRICE</span><strong>{formatPrice(product.price)}</strong><small>per {product.unit}</small></div>
-        <div className="product-actions"><AddToCart productId={product.id} /><Link href={`/products/${product.id}`}>View details →</Link></div>
+        <div className="product-actions"><AddToCart productId={product.id} /><a className="button outline" href={product.paymentUrl} target="_blank" rel="noopener noreferrer" aria-label={`Buy ${product.name} on Razorpay (opens in a new tab)`}>Buy now →</a><Link href={`/products/${product.id}`}>View details →</Link></div>
       </div>
     </article>)}</div>
     <p className="market-price-note">Prices include taxes. Delivery is free. Select your quantities to see the full order total at checkout.</p>
